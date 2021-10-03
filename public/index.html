@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>Currículo Interativo</title>
+
+        <!-- Stylesheets -->
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <!-- Favicon -->
+        <!-- Materialize Css -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <!-- Materialize Icons -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;500;700&display=swap" rel="stylesheet">
+    </head>
+
+    <body <!--style="background-image: url(img/bg.jpg);"-->
+        
+        <!-- Controls -->
+        <button class="control grad5" style="left: 2rem;" onclick="goBack()"> <i class="material-icons">navigate_before</i> </button>
+        <button class="control grad5" style="left: 6rem;" data-goto="home"> <i class="material-icons">home</i> </button>
+
+        <button class="control grad10" style="right: 2rem; top: 88vh;" onclick="goNext()"> <i class="material-icons">navigate_next</i> </button>
+
+        <!-- Home -->
+        <section id="home">
+            <h1 class="transparent-text grad2 bold" style="letter-spacing: 0.5rem; font-size: 3rem; text-align: center;"><span style="letter-spacing: 1.3rem;margin-left: 0.3rem;">MATHEUS</span><br>TOMAZELLA</h1>
+
+            <button class="grad3" style="top: 18rem; right: 10rem;" data-goto="p-1">Projetos</button>
+            
+            <button class="grad6" style="top: 8rem; left: 22rem;" data-goto="f-1">Formação</button>
+
+            <button class="grad8" style="bottom: 6rem; left: 24rem;" data-goto="i-1">Interesses</button>
+
+            <button class="grad9" style="bottom: 5rem; right: 24rem;width: 9rem; height: 9rem;" data-goto="t-1">Tecnologias</button>
+
+            <button class="grad12" style="top: 6rem; right: 26rem;width: 8.5rem; height: 8.5rem;" data-goto="h-1">Habilidades</button>
+
+            <button class="grad5" style="top: 22rem; left: 12rem;width: 7rem; height: 7rem;" data-goto="c-1">Contato</button>
+        </section>
+
+        <!-- Formação -->
+        <section id="f-1">
+            <div style="display: flex;flex-direction: column;">
+                <h4 class="transparent-text all-caps ls-1rem grad3"> Formação </h4>
+                <p class="font-1p3rem">
+                    <span class="bold bold-grey"> Colégio Técnico de Limeira - COTIL </span> <br>
+                    Curso técnico em Desenvolvimento de Sistemas
+                    <br><br>
+                    Estudando programação há cerca de 4 anos
+                </p>
+            </div>
+        </section>
+
+        <!-- Interesses -->
+        <section id="i-1">
+            <div style="display: flex;flex-direction: column;" class="text-right">
+                <h4 class="transparent-text all-caps ls-1rem grad5"> Interesses </h4>
+                <ul class="font-1p3rem">
+                    <li>Programação</li>
+                    <li>Automação</li>
+                    <li>Eletrônica</li>
+                    <li>Química</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Tecnologias -->
+        <section class="vertical" id="t-1">
+            <h4 class="transparent-text all-caps ls-1rem grad7"> Tecnologias </h4>
+            <div style="display: flex;flex-direction: row;">
+                <ul class="font-1p3rem" style="padding: 0 1rem 0 1rem">
+                    <li><span class="bold bold-grey">Javascript</span> / Typescript</li>
+                    <li>Java</li>
+                    <li>Python</li>
+                    <li>SQL</li>
+                </ul>
+                <ul class="font-1p3rem" style="padding: 0 1rem 0 1rem">
+                    <li><span class="bold bold-grey">Node.js</span></li>
+                    <li>React / React Native</li>
+                    <li>Electron</li>
+                    <li>C#</li>
+                </ul>
+                <ul class="font-1p3rem" style="padding: 0 1rem 0 1rem">
+                    <li><span class="bold bold-grey">C / C++</span></li>
+                    <li>Git</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Habilidades -->
+        <section class="vertical" id="h-1">
+            <h4 class="transparent-text all-caps ls-1rem grad9"> Habilidades </h4>
+            <div style="display: flex;flex-direction: row;">
+                <ul class="font-1p3rem" style="padding: 0 1rem 0 1rem">
+                    <li><span class="bold bold-grey">Inglês Intermediário / Avançado</span></li>
+                    <li>Desgin e construção de circuitos microcontrolados</li>
+                    <li>Modelagem 3D</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Projetos -->
+        <section class="vertical" id="p-1-1">
+            <h4 class="transparent-text all-caps ls-1rem grad12"> Projetos </h4>
+        </section>
+        <section class="vertical" id="p-1-2">
+            <div style="display: flex;flex-direction: column; width: 50%;text-align: justify;">
+                <h4 style="text-align: left;" class="transparent-text all-caps ls-1rem grad12"> Sistema de controle para próteses </h4>
+                <p class="font-1p3rem">
+                    Consiste em um ecossistema de aplicações que tem como objetivo servir como uma <span class="bold bold-grey"> alternativa mais barata </span> em relação a outras soluções, já que normalmente são muito caras.
+                </p>
+                <a class="transparent-text grad2" href="https://github.com/MatheusTomazella/Handy#readme" target="_blank">https://github.com/MatheusTomazella/Handy#readme</a>
+            </div> 
+        </section>
+        <section class="vertical" id="p-1-3">
+            <h4 style="text-align: left;" class="transparent-text all-caps ls-1rem grad10"> website </h4>
+            <div style="display: flex;flex-direction: column; width: 50%;text-align: justify;">
+                <p class="font-1p3rem">
+                    Site com função de ser a porta de entrada para o projeto, além de abrigar um chat para suporte do usuário.<br>
+                    Construido em <span class="bold bold-grey">Javascript puro</span> e utilizando comunicação <span class="bold bold-grey">Web socket</span>.
+                </p>
+                <a class="transparent-text grad4" href="https://protesehandy.herokuapp.com/" target="_blank">Site Hospedado</a>
+                <a class="transparent-text grad4" href="https://github.com/MatheusTomazella/Handy-web" target="_blank">Repositório</a>
+            </div> 
+        </section>
+        <section class="vertical" id="p-1-4">
+            <iframe src="https://protesehandy.herokuapp.com/"></iframe>
+        </section>
+        <section class="vertical" id="p-1-5">
+            <div class="text-right" style="display: flex;flex-direction: column; width: 50%;">
+                <h4 style="text-align: left;" class="transparent-text all-caps ls-1rem grad11"> desktop </h4>
+                <p class="font-1p3rem">
+                    Aplicação com funcionalidades de gerenciamente e suporte ao usuário, entre elas o outro ponto do chat presente na web e o gerenciamento das informações do usuário e dos elementos dinâmicos do site (componentes e provedores).<br>
+                    Construido em <span class="bold bold-grey">Electron</span> e utilizando comunicação <span class="bold bold-grey">Web socket</span>.
+                </p>
+                <a class="transparent-text grad6" href="https://github.com/MatheusTomazella/Handy-desktop" target="_blank">Repositório</a>
+            </div> 
+        </section>
+        <section class="vertical" id="p-1-6">
+            <img src="img/desktop1.png"></img>
+        </section>
+        <section class="vertical" id="p-1-7">
+            <img src="img/desktop2.png"></img>
+        </section>
+        <section class="vertical" id="p-1-8">
+            <div style="display: flex;flex-direction: column; width: 50%;">
+                <h4 class="transparent-text all-caps ls-1rem grad11 text-right"> Aplicativo Mobile </h4>
+                <p class="font-1p3rem text-justify">
+                    App com função de criar modos, ler informações e controlar remotamente o sistema embarcado.<br>
+                    Construido em <span class="bold bold-grey">React Native</span> e utilizando comunicação <span class="bold bold-grey">Bluetooth</span> com o circuito.
+                </p>
+                <a class="transparent-text grad6" href="https://github.com/MatheusTomazella/Handy-mobile" target="_blank">Repositório</a>
+                <a class="transparent-text grad6" href="https://github.com/MatheusTomazella/Handy-desktop/releases/download/v1.1/Handy.Suporte.Setup.1.0.0.exe">Download (apenas Android e apenas testado em um aparelho)</a>
+            </div> 
+        </section>
+        <section id="p-1-9">
+            <img class="mobile" src="img/app6.png"></img>
+            <img class="mobile" src="img/app1.png"></img>
+            <img class="mobile" src="img/app2.png"></img>
+        </section>
+        <section id="p-1-10">
+            <img class="mobile" src="img/app3.png"></img>
+            <img class="mobile" src="img/app4.png"></img>
+            <img class="mobile" src="img/app5.png"></img>
+        </section>
+        <section class="vertical" id="p-1-11">
+            <div style="display: flex;flex-direction: column; width: 50%;">
+                <h4 class="transparent-text all-caps ls-1rem grad12 text-right"> Circuito </h4>
+                <p class="font-1p3rem text-justify">
+                    O circuito é responsável por conversar com o aplicativo, receber suas configurações e controlar os atuadores de acordo com o estado dos sensores.<br>
+                    Seu funcionamento é centrado no microcontrolador <span class="bold bold-grey">ESP32</span>. Seu firmware foi construido em <span class="bold bold-grey">C++</span>.
+                </p>
+                <a class="transparent-text grad10" href="https://github.com/MatheusTomazella/Handy-firmware" target="_blank">Repositório Firmware</a>
+            </div> 
+        </section>
+        <section id="p-1-12">
+            <img class="mobile" src="img/circuito1.jpeg"></img>
+            <img class="mobile" src="img/circuito2.jpeg"></img>
+        </section>
+        <section class="vertical" id="p-1-13">
+            <div class="text-left" style="display: flex;flex-direction: column; width: 50%;">
+                <h4 class="transparent-text all-caps ls-1rem grad2"> Modelo 3d </h4>
+                <p class="font-1p3rem text-justify">
+                    Mesmo que o projeto foque na parte do controle da prótese, desenvolveu-se um modelo para construção para fim de testes.
+                </p>
+                <a class="transparent-text grad12 text-center" href="https://a360.co/3icayLX" target="_blank">Visualização Modelo</a>
+            </div> 
+        </section>
+        <!-- <section class="vertical" id="p-1-14">
+            <iframe src="https://a360.co/3icayLX"></iframe>
+        </section> -->
+        <section class="vertical" id="c-1" style="font-size: 2.5rem;">
+            <a class="transparent-text grad10" href="https://linkedin.com/in/matheustomazella" target="_blank">Linkedin</a>
+            <a class="transparent-text grad10" href="https://github.com/MatheusTomazella/" target="_blank">Github</a>
+            <p class="transparent-text grad10">matheus250504@gmail.com</p>
+        </section>
+
+        <!-- jQuery -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <!-- Materialize Js -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <!-- Scripts -->
+        <script src="config.js">    </script>
+        <script src="script.js">    </script>
+    </body>
+</html>
